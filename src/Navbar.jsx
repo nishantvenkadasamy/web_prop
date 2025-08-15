@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -8,12 +9,14 @@ export default function Navbar() {
     <nav className="navbar">
       {/* Logo Left */}
       <div className="nav-left">
-        <img src="/logo.png" alt="Logo" className="logo" />
+        <Link to="/" onClick={() => setMenuOpen(false)}>
+          <img src="/logo.png" alt="Logo" className="logo" />
+        </Link>
       </div>
 
       {/* Desktop Menu */}
       <ul className="nav-links">
-        <li><a href="#home">Home</a></li>
+        <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#properties">Properties</a></li>
         <li><a href="#contact">Contact Us</a></li>
@@ -30,7 +33,7 @@ export default function Navbar() {
           <span className="close-btn" onClick={() => setMenuOpen(false)}>✖</span>
         </div>
         <ul>
-          <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
+          <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
           <li><a href="#about" onClick={() => setMenuOpen(false)}>About Us</a></li>
           <li><a href="#properties" onClick={() => setMenuOpen(false)}>Properties</a></li>
           <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact Us</a></li>

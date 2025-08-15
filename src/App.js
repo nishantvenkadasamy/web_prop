@@ -1,15 +1,19 @@
-
 import './App.css';
 import Navbar from './Navbar';
 import HeroSection from './HeroSection';
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import RecentProperties from "./RecentProperties";
+import PropertyDetails from './PropertyDetails';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <HeroSection />
-      
-    </div>
+    <Router>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<><HeroSection /><RecentProperties /></>} />
+      <Route path="/property/:id" element={<PropertyDetails />} />
+    </Routes>
+  </Router>
   );
 }
 

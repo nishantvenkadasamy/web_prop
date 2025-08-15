@@ -1,0 +1,87 @@
+.recent-properties {
+  align-items: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  text-align: center;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.property-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.property-carousel::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.property-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.property-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.arrow-btn {
+  background: rgba(255, 204, 0, 0.8);
+  border: none;
+  border-radius: 80%;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.arrow-btn.left {
+  margin-right: 15px;
+}
+
+.arrow-btn.right {
+  margin-left: 15px;
+}
+
+.property-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.buy-btn {
+  background-color: #ffcc00;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.view-more-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-more-btn:hover {
+  background-color: #0056b3;
+}
