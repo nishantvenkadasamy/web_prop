@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './Navbar';
 import HeroSection from './HeroSection';
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import { HashRouter as Router,Routes,Route } from 'react-router-dom';
 import RecentProperties from "./RecentProperties";
 import PropertyDetails from './PropertyDetails';
 
