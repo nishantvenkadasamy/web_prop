@@ -2,7 +2,7 @@ import { useLocation, useParams, useNavigate } from "react-router-dom";
 import "./PropertyDetails.css";
 
 export default function PropertyDetails() {
-  const { id } = useParams();
+ 
   const location = useLocation();
   const navigate = useNavigate();
   const { property } = location.state || {};
