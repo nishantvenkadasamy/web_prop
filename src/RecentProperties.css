@@ -85,3 +85,13 @@
 .view-more-btn:hover {
   background-color: #0056b3;
 }
+.sold-btn {
+  background-color: #dc3545; /* red */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-top: 8px;
+  cursor: not-allowed;
+  opacity: 0.8;
+}

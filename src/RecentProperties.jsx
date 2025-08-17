@@ -240,7 +240,7 @@ export default function RecentProperties() {
           {showAll
             ? isMobile
               ? "Show Less"
-              : "Show Carousel"
+              : "Show Less"
             : "View More"}
         </button>
       </div>
